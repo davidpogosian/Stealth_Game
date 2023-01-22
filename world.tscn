@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bt4nfa3xftr2s"]
+[gd_scene load_steps=7 format=3 uid="uid://b8o07famta3i4"]
 
 [ext_resource type="PackedScene" uid="uid://cxtnm7df7ftkr" path="res://Prefabs/player.tscn" id="1_ienuk"]
 [ext_resource type="PackedScene" uid="uid://c1liiquuxc6j6" path="res://Prefabs/plane.tscn" id="2_ulyi3"]

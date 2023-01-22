@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxtnm7df7ftkr"]
+[gd_scene load_steps=6 format=3 uid="uid://b43utrex6n7rc"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_ku4eb"]
-[ext_resource type="Script" path="res://Scripts/interactRay.gd" id="2_jeh4h"]
-[ext_resource type="Texture2D" uid="uid://bny30etpi2de4" path="res://Textures/crosshair32px.png" id="3_01tsd"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_fx5n2"]
+[ext_resource type="Script" path="res://scripts/interactRay.gd" id="2_vx77v"]
+[ext_resource type="Texture2D" uid="uid://bny30etpi2de4" path="res://textures/crosshair32px.png" id="3_loiu7"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_k65u1"]
 
@@ -11,7 +11,7 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-script = ExtResource("1_ku4eb")
+script = ExtResource("1_fx5n2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_k65u1")
@@ -26,8 +26,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.685341, 0)
 
 [node name="InteractRay" type="RayCast3D" parent="Head"]
 target_position = Vector3(0, 0, -4)
-debug_shape_custom_color = Color(1, 0, 0, 1)
-script = ExtResource("2_jeh4h")
+debug_shape_custom_color = Color(0, 0.65098, 0.0470588, 1)
+script = ExtResource("2_vx77v")
 
 [node name="Prompt" type="Label" parent="Head/InteractRay"]
 anchors_preset = 14
@@ -53,4 +53,4 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_01tsd")
+texture = ExtResource("3_loiu7")

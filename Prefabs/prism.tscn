@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cn8c5ftb7s87t"]
 
-[ext_resource type="Script" path="res://Scripts/interactable.gd" id="1_26b37"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="1_1jyev"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_4poth"]
 
@@ -8,7 +8,7 @@
 data = PackedVector3Array(0, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0.5, -0.5, 0.5, 0, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, -0.5, -0.5, -0.5, 0, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [node name="Prism" type="StaticBody3D"]
-script = ExtResource("1_26b37")
+script = ExtResource("1_1jyev")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
