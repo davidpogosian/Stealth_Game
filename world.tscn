@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://bt4nfa3xftr2s"]
+
+[ext_resource type="PackedScene" uid="uid://cxtnm7df7ftkr" path="res://Prefabs/player.tscn" id="1_ienuk"]
+[ext_resource type="PackedScene" uid="uid://c1liiquuxc6j6" path="res://Prefabs/plane.tscn" id="2_ulyi3"]
+[ext_resource type="PackedScene" uid="uid://cn8c5ftb7s87t" path="res://Prefabs/prism.tscn" id="3_76pjh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r7qcy"]
+
+[sub_resource type="Sky" id="Sky_slo3g"]
+sky_material = SubResource("ProceduralSkyMaterial_r7qcy")
+
+[sub_resource type="Environment" id="Environment_732ml"]
+background_mode = 2
+sky = SubResource("Sky_slo3g")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_732ml")
+
+[node name="Plane" parent="." instance=ExtResource("2_ulyi3")]
+
+[node name="Prism" parent="." instance=ExtResource("3_76pjh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_ienuk")]
