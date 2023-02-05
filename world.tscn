@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bt4nfa3xftr2s"]
+[gd_scene load_steps=8 format=3 uid="uid://bt4nfa3xftr2s"]
 
-[ext_resource type="PackedScene" uid="uid://cxtnm7df7ftkr" path="res://Prefabs/player.tscn" id="1_ienuk"]
-[ext_resource type="PackedScene" uid="uid://c1liiquuxc6j6" path="res://Prefabs/plane.tscn" id="2_ulyi3"]
-[ext_resource type="PackedScene" uid="uid://cn8c5ftb7s87t" path="res://Prefabs/prism.tscn" id="3_76pjh"]
+[ext_resource type="PackedScene" uid="uid://cxtnm7df7ftkr" path="res://prefabs/player.tscn" id="1_ienuk"]
+[ext_resource type="PackedScene" uid="uid://c1liiquuxc6j6" path="res://prefabs/plane.tscn" id="2_ulyi3"]
+[ext_resource type="PackedScene" uid="uid://cn8c5ftb7s87t" path="res://prefabs/prism.tscn" id="3_76pjh"]
+[ext_resource type="PackedScene" uid="uid://byidxgulk4lbc" path="res://atm.tscn" id="4_mxjdt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r7qcy"]
 
@@ -26,3 +27,6 @@ environment = SubResource("Environment_732ml")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_ienuk")]
+
+[node name="ATM_with_anim" parent="." instance=ExtResource("4_mxjdt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.96845, -9.53674e-07, -4.18046)
